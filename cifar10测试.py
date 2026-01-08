@@ -338,24 +338,6 @@ def run_single_experiment(dataset_name, model_names, cp_methods, attacks,
 # ------------------------------
 def main(args):
     FIXED_MODELS = ['Addepalli2022Efficient_RN18', 'Bai2024MixedNUTS', 'Chen2024Data_WRN_34_10', 'Debenedetti2022Light_XCiT-S12', 'Xu2023Exploring_WRN-28-10']
-        # ['Addepalli2022Efficient_RN18', 'Bai2024MixedNUTS', 'Chen2024Data_WRN_34_10',
-        #             'Cui2023Decoupled_WRN-34-10', 'Debenedetti2022Light_XCiT-S12']
-
-    # @article{addepalli2022efficient,
-    #   title={Efficient and effective augmentation strategy for adversarial training},
-    #   author={Addepalli, Sravanti and Jain, Samyak and others},
-    #   journal={Advances in Neural Information Processing Systems},
-    #   volume={35},
-    #   pages={1488--1501},
-    #   year={2022}
-    # }
-    # @article{baimixednuts,
-    #   title={MixedNUTS: Training-Free Accuracy-Robustness Balance via Nonlinearly Mixed Classifiers},
-    #   author={Bai, Yatong and Zhou, Mo and Patel, Vishal M and Sojoudi, Somayeh},
-    #   journal={Transactions on Machine Learning Research},
-    #   year = {2024}
-    # }
-
     FIXED_ATTACKS = ['APGD', 'CW', 'FGSM', 'GN', 'PGD', 'PIFGSM', 'SPSA', 'Square', 'clean']
 
     os.makedirs(args.save_dir, exist_ok=True)
@@ -387,4 +369,5 @@ if __name__ == '__main__':
     parser.add_argument('--save_dir', default="./game_theory_results", type=str,
                         help='Main save directory for all results')
     args = parser.parse_args()
+
     main(args)
