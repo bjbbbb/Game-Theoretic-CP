@@ -1,5 +1,5 @@
 # Game-Theoretic-Defenses-for-Adversarially-Robust-Conformal-Prediction
-# Game-Theoretic Defenses for Adversarially Robust Conformal Prediction
+
 
 [![Paper](https://img.shields.io/badge/Paper-OpenReview-blue)](https://openreview.net/forum?id=v1slR4T7Ld)
 [![Venue](https://img.shields.io/badge/Venue-TMLR%202026-red)](https://jmlr.org/tmlr/)
